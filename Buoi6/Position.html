@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 90em;
+    }
+
+    #divFix {
+      position: fixed;
+      width: 200px;
+      height: 150px;
+      right: 0px;
+      bottom: 0px;
+      background-color: #ff00ff;
+    }
+
+    #div1Absolute {
+      position: absolute;
+      width: 600px;
+      height: 400px;
+      border: #ff0000 thin double;
+      background-color: #ff00ff;
+      top: 100px;
+      left: 200px;
+    }
+
+    #div2AbsoluteInDiv1 {
+      width: 300px;
+      height: 200px;
+      border: blue thin solid;
+      background-color: #ff0;
+      position: absolute;
+      top: 150px;
+      right: 100px;
+    }
+
+    #div3Relative {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        width: 500px;
+        height: 400px;
+        border: #00f thick dashed;
+        background-color: #cccccc;
+        z-index: -1;
+      }
+
+      #div4Relative {
+        position: relative;
+        top: -50px;
+        left: 100px;
+        width: 300px;
+        height: 300px;
+        border: #090 thick dotted;
+        background-color: #39c
+      }
+  </style>
+</head>
+
+<body>
+  <div id="divFix">
+    Contact me
+    <pre>
+      #divFix {
+        position: fixed;
+        width: 200px;
+        height: 150px;
+        right: 0px;
+        bottom: 0px;
+        background-color: #ff00ff;
+      }
+    </pre>
+  </div>
+
+  <div id="div1Absolute">
+    Đây là thẻ Div có id là Div1Absolute
+
+    <pre>
+      position: absolute;
+      width: 600px;
+      height: 400px;
+      border: #ff0000 thin double;
+      background-color: #ff00ff;
+      top: 100px;
+      left: 200px;
+    </pre>
+
+    <div id="div2AbsoluteInDiv1">
+      Đây là thẻ div2Absolute nằm trong div1Absolute
+      <pre>
+        #div2AbsoluteInDiv1 {
+          width: 300px;
+          height: 200px;
+          border: blue thin solid;
+          background-color: #ff0;
+          position: absolute;
+          top: 150px;
+          right: 100px;
+        }
+      </pre>
+    </div>
+  </div>
+
+  <div id="div3Relative">
+    Đây là thẻ div3Relative 
+
+    <pre>
+      #div3Relative {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        width: 500px;
+        height: 400px;
+        border: #00f thick dashed;
+        background-color: #cccccc;
+        z-index: -1;
+      }
+    </pre>
+  </div>
+
+  <div id="div4Relative">
+    Đây là thẻ div4Relative so với thẻ Div 3
+
+    <pre>
+      #div4Relative {
+        position: relative;
+        top: -50px;
+        left: 100px;
+        width: 300px;
+        height: 300px;
+        border: #090 thick dotted;
+        background-color: #39c
+      }
+    </pre>
+  </div>
+</body>
+
+</html>
