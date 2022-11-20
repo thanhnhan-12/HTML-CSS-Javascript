@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 6</title>
+</head>
+<body>
+  <h3 id="price"></h3>
+
+  <script>
+    var unitPrice = prompt("Enter a unit price: ", unitPrice);
+    var amount = prompt("Enter a amount: ", amount);
+    var sale = 0.1;
+
+    var money = parseInt(unitPrice) * parseInt(amount) * sale;
+
+    document.getElementById("price").innerHTML = "Money: " + money;
+
+  </script>
+  <p><a href="/Buoi8/Basic/index.html">Return</a></p>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 3</title>
+</head>
+<body>
+  <h3 id="area"></h3>
+  <h3 id="perimeter"></h3>
+
+  <script>
+      var R = prompt("Enter the circle radius: ", R );
+      const pi = 3.14;
+
+      var Area = Math.pow(parseInt(R), 2) * pi;
+      var Perimeter = 2 * parseInt(R) * pi;
+      document.getElementById("area").innerHTML = "Area of circle radius: " + Area;
+      document.getElementById("perimeter").innerHTML = "Perimeter of circle radius: " + Perimeter;
+  </script>
+  <p><a href="/Buoi8/Basic/index.html">Return</a></p>
+
+</body>
+</html>
