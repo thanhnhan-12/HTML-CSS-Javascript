@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example 4</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <style>
+    #message {
+      display: flex;
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+      display: none;
+      height: 200px;
+      width: 300px;
+    }
+
+    .message-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: blue;
+      color: #fff;
+      height: 30px;
+      flex: 1;
+    }
+
+    .message-close {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      color: #000;
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+    }
+
+    .message-content {
+      padding: 6px;
+      background-color: green;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="message">
+    <div >
+      <div class="message-header">THONG BAO</div>
+      <div class="message-close">X</div>
+    </div>
+
+    <div class="message-content"></div>
+  </div>
+
+  <input type="button" id="buttonSubmit" value="Submit" >
+</body>
+
+  <script>
+    $("#buttonSubmit").click(function() {
+      $("#message").fadeIn(200);
+      // Insert message into dialog (message-content)
+      var text = "Noi dung thong bao";
+      $(".message-content").html(text);
+    });
+
+    $(".message-close").click(function() {
+      $("#message").fadeOut(200);
+    });
+  </script>
+</html>
