@@ -135,3 +135,143 @@ h3 {
 .product-list li a strong span {
   color: #a57aa5;
 }
+
+/*  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2%;
+}
+
+h2 {
+  font-weight: 100;
+  color: #217021;
+  padding-bottom: 0.2em;
+}
+
+h2,
+.triangle,
+h3 {
+  text-transform: uppercase;
+}
+
+.underline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line1,
+.line2 {
+  border: solid;
+}
+
+.line1 {
+  border-color: #a41b1b;
+  width: 12.4%;
+}
+
+.line2 {
+  border-color: #d4cece;
+  width: 90%;
+}
+
+/* Products List */
+.container {
+  margin-top: 2em;
+}
+
+.product-list {
+  display: grid;
+  grid-gap: 6px;
+  border: none;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.product-list li {
+  list-style: none;
+  border-radius: 4px;
+  border: none;
+  background-color: #fff;
+  padding: 14px 20px 20px;
+  transition: all .2s ease-in-out;
+}
+
+.product-list li:hover {
+  transform: scale(1.1);
+}
+
+.product-list li a {
+  text-decoration: none;
+}
+
+.product-list li a .triangle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  width: 8%;
+  font-weight: 600;
+  font-size: 11px;
+  background: #d6951f;
+  color: #fff;
+  border: 1px solid transparent;
+  position: relative;
+  left: -20px;
+  width: 40%;
+}
+
+.product-list li a .triangle .arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 13.4px solid transparent;
+  border-bottom: 13.4px solid transparent;
+  border-left: 13.4px solid #d6951f;
+  position: absolute;
+  left: 100.5%;
+}
+
+.product-list li a .product-img {
+  margin: 1em 0 3.5em;
+}
+
+.product-list li a .product-img img {
+  width: 207px;
+  height: 138px;
+}
+
+.product-list li a h3 {
+  color: #695a5a;
+  font-size: 0.95em;
+  line-height: 21px;
+  width: 13.5em;
+}
+
+.product-list li a .code-price {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.product-list li a p {
+  color: #dababa;
+  margin-bottom: 8px;
+}
+
+.product-list li a strong {
+  color: red;
+}
+
+.product-list li a h3 {
+  text-align: center;
+}
+
+.product-list li a strong span {
+  color: #a57aa5;
+}
+
